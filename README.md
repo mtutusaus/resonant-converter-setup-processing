@@ -1,1 +1,92 @@
+# Junction Temperature Estimation from Switching Waveforms
+
+This repository contains MATLAB scripts and functions to estimate the junction temperature (**Tj**) of IGBT devices during switching events using measured electrical waveforms.
+
 ---
+
+## **Overview**
+The workflow:
+1. Import measured waveforms (`Vce`, `Ic`, `Vge`) from CSV files.
+2. Generate processing mask for switching periods.
+3. Apply corrections:
+   - Offset correction for `Vce`
+   - Inductive drop compensation
+5. Estimate junction temperature using a lookup table (LUT) and thermal impedance.
+6. Compute uncertainty propagation and statistical analysis.
+
+---
+
+## **Requirements**
+- MATLAB (works on R2024a)
+- Look up table properly formatted `.mat` files for the specific device under test
+
+---
+
+## **Repository Structure**
+```
+📂 /functions
+    ├── generateProcessMask.m
+    ├── applyOffsetCorrection.m
+    ├── compensateInductiveDrop.m
+    ├── estimateTj.m
+
+📂 /scripts
+    ├── main_script.m          # Single-file processing
+    ├── bulk_processing.m      # Batch processing of multiple files
+
+📂 /docs
+    ├── generateProcessMask.md
+    ├── applyOffsetCorrection.md
+    ├── compensateInductiveDrop.md
+    ├── estimateTj.md
+    ├── main_script.md
+    ├── bulk_processing.md
+```
+
+---
+
+## **How to Use**
+### **Single File Processing**
+Run:
+```matlab
+main_script
+```
+- Select two CSV files: one with `time, Vce, Ic` and another with `Vge`.
+- Outputs:
+  - Full Tj and uncertainty waveform during processing window.
+  - Period-wise analysis of Tj during processing window.
+  - Period-wise analysis of Tj at the point of maximum Ic.
+
+### **Bulk Processing**
+Run:
+```matlab
+bulk_processing
+```
+- Select multiple CSV files (pairs of waveform and Vge files).
+- Outputs:
+  - Period-wise analysis of Tj at the point of maximum Ic only.
+
+---
+
+## **Functions**
+See detailed documentation in `/docs`:
+- [generateProcessMask](docs/generateProcessMask.md)
+- [applyOffsetCorrection](docs/applyOffsetCorrection.md)
+- [compensateInductiveDrop](docs/compensateInductiveDrop.md)
+- [estimateTj](docs/estimateTj.md)
+
+---
+
+## **License**
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit
+- **NonCommercial** — You may not use the material for commercial purposes
+- **ShareAlike** — Derivatives must use the same license
+
+See the [LICENSE](LICENSE) file for the full license text.
