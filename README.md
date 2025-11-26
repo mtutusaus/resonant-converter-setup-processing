@@ -1,7 +1,6 @@
 # Junction Temperature Estimation from Switching Waveforms
 
-This repository contains the necessary MATLAB scripts to process electrical waveforms measured with the TiePie acquisition system on the resonant converter setup to obtain online junction temperature of device under test.
-
+During my PhD at the IMB-CNM (CSIC) in Barcelona I was in charge of developing postprocessing software to convert measured electrical waveforms of a device under test operating inside a resonant converter to junction temperature. This repository has all the MATLAB scripts and functions needed to do so.
 ---
 
 ## **Overview**
