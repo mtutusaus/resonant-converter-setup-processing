@@ -1,6 +1,6 @@
 # Junction Temperature Estimation from Switching Waveforms
 
-This repository contains MATLAB scripts and functions to estimate the junction temperature (**Tj**) of IGBT devices during switching events using measured electrical waveforms.
+This repository contains MATLAB scripts and functions to estimate the junction temperature (**Tj**) of IGBT or MOSFET power devices during operation on the resonant converter setup.
 
 ---
 
