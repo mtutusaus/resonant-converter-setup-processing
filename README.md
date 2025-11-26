@@ -1,12 +1,12 @@
 # Junction Temperature Estimation from Switching Waveforms
 
-During my PhD at the IMB-CNM (CSIC) in Barcelona I was in charge of developing postprocessing software to convert measured electrical waveforms of a device under test operating inside a resonant converter to junction temperature. This repository has all the MATLAB scripts and functions needed to do so.
+During my PhD at the [IMB-CNM (CSIC)](https://www.imb-cnm.csic.es/en) in Barcelona I was in charge (among other things) of developing postprocessing software to convert measured electrical waveforms of a device under test (operating inside the resonant converter setup) to junction temperature. This repository has all the MATLAB scripts and functions needed to do so.
 
 ---
 
 ## **Overview**
 The workflow:
-1. Import measured waveforms (`Vce`, `Ic`, `Vge`) from CSV files.
+1. Import measured waveforms (`Vce`, `Ic`, `Vge`) from CSV files acquired with the TiePie setup.
 2. Generate processing mask for switching periods.
 3. Apply corrections:
    - Offset correction for `Vce`
