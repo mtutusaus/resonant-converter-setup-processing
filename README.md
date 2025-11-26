@@ -39,8 +39,6 @@ The workflow:
     ├── applyOffsetCorrection.md
     ├── compensateInductiveDrop.md
     ├── estimateTj.md
-    ├── main_script.md
-    ├── bulk_processing.md
 ```
 
 ---
