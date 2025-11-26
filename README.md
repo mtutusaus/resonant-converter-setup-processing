@@ -1,6 +1,7 @@
 # Junction Temperature Estimation from Switching Waveforms
 
 During my PhD at the IMB-CNM (CSIC) in Barcelona I was in charge of developing postprocessing software to convert measured electrical waveforms of a device under test operating inside a resonant converter to junction temperature. This repository has all the MATLAB scripts and functions needed to do so.
+
 ---
 
 ## **Overview**
