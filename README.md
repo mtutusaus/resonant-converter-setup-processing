@@ -88,3 +88,11 @@ Under the following terms:
 - **ShareAlike** — Derivatives must use the same license
 
 See the [LICENSE](LICENSE) file for the full license text.
+
+## Acknowledgments
+
+- M365 Copiñpt (Microsoft) for development assistance
+
+## Author
+
+[Miquel Tutusaus](https://github.com/mtutusaus), 2025
