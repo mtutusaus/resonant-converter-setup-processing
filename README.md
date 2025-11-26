@@ -91,7 +91,7 @@ See the [LICENSE](LICENSE) file for the full license text.
 
 ## Acknowledgments
 
-- M365 Copiñpt (Microsoft) for development assistance
+- M365 Copilot (Microsoft) for development assistance
 
 ## Author
 
