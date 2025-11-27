@@ -87,7 +87,7 @@ Under the following terms:
 - **NonCommercial** — You may not use the material for commercial purposes
 - **ShareAlike** — Derivatives must use the same license
 
-See the [LICENSE](LICENSE) file for the full license text.
+See the [LICENSE](LICENSE.md) file for the full license text.
 
 ## Acknowledgments
 
