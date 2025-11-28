@@ -25,6 +25,7 @@ The workflow:
 ## **Repository Structure**
 ```
 📂 /functions
+    ├── importCSV.m
     ├── generateProcessMask.m
     ├── applyOffsetCorrection.m
     ├── compensateInductiveDrop.m
@@ -68,6 +69,7 @@ bulk_processing
 
 ## **Functions**
 See detailed documentation in `/docs`:
+- [importCSV](docs/importCSV.md)
 - [generateProcessMask](docs/generateProcessMask.md)
 - [applyOffsetCorrection](docs/applyOffsetCorrection.md)
 - [compensateInductiveDrop](docs/compensateInductiveDrop.md)
