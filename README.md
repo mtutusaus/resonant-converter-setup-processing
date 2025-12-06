@@ -77,7 +77,7 @@ See detailed documentation in `/docs`:
 ---
 ## **Development**
 
-- This project was developed with AI assistance (M365 Copilot) for code suggestions, debugging, and optimization.
+- This project is developed with AI assistance (M365 Copilot) for code suggestions, debugging, and optimization.
 
 ---
 ## **License**
